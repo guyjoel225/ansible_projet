@@ -1,0 +1,9 @@
+---
+- name: test de ping sur mes nodes
+  hosts: all
+  become: true
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks: 
+    - name: faire un ping sur mes hôtes distants
+      ping:
