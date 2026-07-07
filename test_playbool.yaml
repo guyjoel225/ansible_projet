@@ -7,3 +7,7 @@
   tasks: 
     - name: faire un ping sur mes hôtes distants
       ping:
+    - name: mise à jour des cache et des paquets
+      apt:
+        update_cache: yes
+        upgrade: safe
